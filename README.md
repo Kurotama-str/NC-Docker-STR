@@ -7,7 +7,7 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/library/nextcloud)
 [![Helm](https://img.shields.io/badge/Helm-0F1689?logo=helm&logoColor=fff)](https://github.com/nextcloud/helm/?tab=readme-ov-file)
 
-# What is Nextcloud?
+# What is Nextcloud? [⚠️⚠️⚠️ WARNING ! This is NOT the official image, this is a fork ! ⚠️⚠️⚠️]
 
 A safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms.
 
