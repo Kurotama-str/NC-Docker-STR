@@ -47,6 +47,4 @@ RUN set -ex; \
     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \
     rm -rf /var/lib/apt/lists/*
 
-;
-
 ENV NEXTCLOUD_UPDATE=1
