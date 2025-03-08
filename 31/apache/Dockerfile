@@ -14,6 +14,13 @@ RUN set -ex; \
         libldap-common \
         libmagickcore-6.q16-6-extra \
         rsync \
+        ffmpeg \
+        ghostscript \
+        procps \
+        smbclient \
+       # supervisor \
+        libreoffice \
+        nano \
     ; \
     rm -rf /var/lib/apt/lists/*; \
     \
