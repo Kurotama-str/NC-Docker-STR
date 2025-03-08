@@ -7,13 +7,13 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/library/nextcloud)
 [![Helm](https://img.shields.io/badge/Helm-0F1689?logo=helm&logoColor=fff)](https://github.com/nextcloud/helm/?tab=readme-ov-file)
 
-# What is Nextcloud? [⚠️⚠️⚠️ WARNING ! This is NOT the official image, this is a fork ! ⚠️⚠️⚠️]
+# What is Nextcloud? [⚠️⚠️⚠️ WARNING ! This is NOT the official image, this is a fork !]
 
 A safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms.
 
 ![logo](https://cdn.rawgit.com/nextcloud/docker/071b888f7f689caa62c1498b6c61cb3599bcea2b/logo.svg)
 
-⚠️⚠️⚠️ This image is maintained by community volunteers and designed for expert use. For quick and easy deployment that supports the full set of Nextcloud Hub features, use the [Nextcloud All-in-One docker container](https://github.com/nextcloud/all-in-one#nextcloud-all-in-one) maintained by Nextcloud GmbH.
+This image is maintained by community volunteers and designed for expert use. For quick and easy deployment that supports the full set of Nextcloud Hub features, use the [Nextcloud All-in-One docker container](https://github.com/nextcloud/all-in-one#nextcloud-all-in-one) maintained by Nextcloud GmbH.
 
 # How to use this image
 This image is designed to be used in a micro-service environment. There are two versions of the image you can choose from.
