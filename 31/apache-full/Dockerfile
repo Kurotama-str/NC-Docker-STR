@@ -10,6 +10,7 @@ RUN set -ex; \
         procps \
         smbclient \
         libreoffice \
+        nano \
     ; \
     rm -rf /var/lib/apt/lists/*
 
