@@ -10,8 +10,8 @@ declare -A debian_version=(
 )
 
 declare -A php_version=(
-	[default]='8.2'
-	[31]='8.3'
+	[29]='8.2'
+	[default]='8.3'
 )
 
 declare -A cmd=(
@@ -55,7 +55,7 @@ igbinary_version="$(
 )"
 
 imagick_version="$(
-	git ls-remote --tags https://github.com/mkoppanen/imagick.git \
+	git ls-remote --tags https://github.com/imagick/imagick.git \
 		| cut -d/ -f3 \
 		| grep -viE '[a-z]' \
 		| tr -d '^{}' \
