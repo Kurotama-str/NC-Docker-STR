@@ -11,6 +11,7 @@ RUN set -ex; \
         smbclient \
         libreoffice \
         nano \
+        cronie\
     ; \
     rm -rf /var/lib/apt/lists/*
 
