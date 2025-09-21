@@ -6,12 +6,16 @@ RUN set -ex; \
     apt-get install -y --no-install-recommends \
         ffmpeg \
         ghostscript \
-        libmagickcore-6.q16-6-extra \
         procps \
         smbclient \
         libreoffice \
         nano \
-        cron\
+        cron \
+        busybox-static \
+        bzip2 \
+        libldap-common \
+        libmagickcore-7.q16-10-extra \
+        rsync \
     ; \
     rm -rf /var/lib/apt/lists/*
 
