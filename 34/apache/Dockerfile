@@ -1,5 +1,5 @@
 # DO NOT EDIT: created by update.sh from Dockerfile-debian.template
-FROM php:8.3-apache-trixie
+FROM php:8.5-apache-trixie
 
 # entrypoint.sh and cron.sh dependencies
 RUN set -ex; \
@@ -46,7 +46,7 @@ RUN set -ex; \
     ; \
     \
     debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; \
-    docker-php-ext-configure ftp --with-openssl-dir=/usr; \
+    docker-php-ext-configure ftp --with-ftp-ssl; \
     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp; \
     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; \
     docker-php-ext-install -j "$(nproc)" \
@@ -150,7 +150,7 @@ RUN { \
     } > /etc/apache2/conf-available/apache-limits.conf; \
     a2enconf apache-limits
 
-ENV NEXTCLOUD_VERSION 32.0.11
+ENV NEXTCLOUD_VERSION 34.0.0
 
 RUN set -ex; \
     fetchDeps=" \
@@ -160,8 +160,8 @@ RUN set -ex; \
     apt-get update; \
     apt-get install -y --no-install-recommends $fetchDeps; \
     \
-    curl -fsSL -o nextcloud.tar.bz2 "https://github.com/nextcloud-releases/server/releases/download/v32.0.11/nextcloud-32.0.11.tar.bz2"; \
-    curl -fsSL -o nextcloud.tar.bz2.asc "https://github.com/nextcloud-releases/server/releases/download/v32.0.11/nextcloud-32.0.11.tar.bz2.asc"; \
+    curl -fsSL -o nextcloud.tar.bz2 "https://github.com/nextcloud-releases/server/releases/download/v34.0.0/nextcloud-34.0.0.tar.bz2"; \
+    curl -fsSL -o nextcloud.tar.bz2.asc "https://github.com/nextcloud-releases/server/releases/download/v34.0.0/nextcloud-34.0.0.tar.bz2.asc"; \
     export GNUPGHOME="$(mktemp -d)"; \
 # gpg key from https://nextcloud.com/nextcloud.asc
     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A; \
